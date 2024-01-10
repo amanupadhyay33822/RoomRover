@@ -24,7 +24,7 @@ const Home = () => {
             alt="banner1"
             width={200}
             height={200}
-            className=" h-80 w-full"
+            className=" h-80 w-full object-cover"
           />
         </div>
         <div className="mb-14">
