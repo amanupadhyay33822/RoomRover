@@ -11,6 +11,7 @@ const Hotel = ({hotel}) => {
             hotel.banner
            }
           alt="hotel"
+          loading="lazy"
           width={200}
           height={200}
           className=" w-96 mr-3 h-large-box "
@@ -25,6 +26,7 @@ const Hotel = ({hotel}) => {
                     alt="hotel"
                     width={200}
                     height={200}
+                    loading="lazy"
                     className=" w-28 h-16 object-cover  "
                   />
                 );
@@ -52,6 +54,7 @@ const Hotel = ({hotel}) => {
                             height={300}
                             className="w-8 h-8 rounded-full"
                             alt="hello"
+                            loading="lazy"
                           />
                         </span>
                         <span className="ml-5">{e.name}</span></li>
