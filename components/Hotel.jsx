@@ -68,7 +68,7 @@ const Hotel = ({hotel}) => {
           <button className="w-60 h-14 rounded-lg bg-blue-400 text-lg">Price: {hotel.price}</button>
           <Link
               href={`/hotels/${hotel._id}`}
-              className="text-lg font-bold text-red-600 ml-10"
+              className="text-lg font-bold text-red-600 ml-8"
             >
               See Details
             </Link>
