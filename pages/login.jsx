@@ -31,7 +31,11 @@ const Login = () => {
     Cookies.set("user-login",res.data.token,{expires:7});
     alert(res.data.msg);
     router.back();
-   }
+   }else{
+    alert(res.data.msg);
+    return;
+  }
+   
   }
   const handleSignup = async () => {
     
