@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 
 
 const Login = () => {
+  
   const router = useRouter();
   const [name,setName] = useState("");
   const [email,setEmail] = useState("");
@@ -19,22 +20,25 @@ const Login = () => {
     setLogin(!login);
   };
   const handleLogin = async () => {
+    try {
+      const res = await axios.post(`/api/user/login`,{
+        email,
+        password
+       })
     
-
-   const res = await axios.post(`/api/user/login`,{
-    email,
-    password
-   })
+       if(res?.data){
+        Cookies.set("user-login",res.data.token,{expires:7});
+        alert(res.data.msg);
+        router.back();
+       }
+    } catch (error) {
+       alert(error.response.data.msg);
+     
+       return;
+    }
    
 
-   if(res?.data){
-    Cookies.set("user-login",res.data.token,{expires:7});
-    alert(res.data.msg);
-    router.back();
-   }else{
-    alert(res.data.msg);
-    return;
-  }
+
    
   }
   const handleSignup = async () => {
