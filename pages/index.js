@@ -5,13 +5,14 @@ import Image from "next/image"
 import Head from "next/head"
 import Header4 from "@/components/Header4"
 import Footer from "@/components/Footer"
+import icon from "./"
 
 
 const Home = () => {
   return (
     <div className="sm:bg-cover bg-cover">
       <Head>
-        <title>OYO : India`s Best Online Hotel Booking Site For Sanitized Stay.</title>
+        <title>RoomRover : India`s Best Online Hotel Booking Site For Sanitized Stay.</title>
         <link rel="icon" href="/icon.png"></link>
       </Head>
       <Navbar/>
