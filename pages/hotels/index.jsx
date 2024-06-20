@@ -56,14 +56,14 @@ const hotels = ({ hotels }) => {
                   </div>
                 );
               })
-            : hotels
-            ? hotels.map((hotel) => {
-                return (
-                  <div key={hotel._id} className="m-5">
-                    <Hotel hotel={hotel} />
-                  </div>
-                );
-              })
+            
+            // ? hotels.map((hotel) => {
+            //     return (
+            //       <div key={hotel._id} className="m-5">
+            //         <Hotel hotel={hotel} />
+            //       </div>
+            //     );
+            //   })
             : "No hotel found"}
         </div>
       </div>
