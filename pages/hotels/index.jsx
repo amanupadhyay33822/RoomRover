@@ -64,7 +64,7 @@ const hotels = ({ hotels }) => {
                   </div>
                 );
               })
-            : ""}
+            : "No hotel found"}
         </div>
       </div>
     </>
