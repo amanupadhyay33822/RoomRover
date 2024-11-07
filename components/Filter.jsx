@@ -44,6 +44,7 @@ const Filter = ({
           min={0}
           max={3000}
           defaultValue={price ? price : ""}
+           onChange={(e) => setPrice(e.target.value)}
         />
         <span className="ml-10">&#8377; {price ? price : ""}</span>
         <div>
